@@ -276,6 +276,11 @@ app.get("/", (req, res) => {
   res.send("Welcome to backend todo project!");
 });
 
+// Example API route
+app.get("/api/tasks", (req, res) => {
+  res.json({ tasks: [] });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
